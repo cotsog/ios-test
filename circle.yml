@@ -2,3 +2,7 @@ machine:
   xcode:
     version: 8.0
 
+test:
+  override:
+    - sysctl hw.memsize
+    - sysctl hw.ncpu
